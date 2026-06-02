@@ -64,7 +64,10 @@ export const products: Product[] = [
     certifications: ["CAT III", "EN 388:2016", "EN ISO 374-1:2016 Type A", "EN ISO 374-5:2016"],
     markings: "AJKLMNT - OP",
     application: "Chemical handling, laboratory, industrial, virus protection, bio waste handling, housekeeping, paint workshops, food processing, aircraft maintenance",
-    images: [],
+    images: [
+      "/assets/products/chem-glove-1.jpg",
+      "/assets/products/chem-glove-2.jpg"
+    ],
     variants: [
       { thickness: "11 mil", lining: "Unlined" },
       { thickness: "11 mil", lining: "Flock lined" },
@@ -103,7 +106,10 @@ export const products: Product[] = [
     certifications: ["CAT III", "EN 388:2016", "EN ISO 374-1:2016 Type A", "EN ISO 374-5:2016"],
     markings: "AJKLMNT - OP",
     application: "Chemical handling, laboratory, industrial cleaning, petroleum handling, food processing",
-    images: [],
+    images: [
+      "/assets/products/chem-glove-1.jpg",
+      "/assets/products/chem-glove-2.jpg"
+    ],
     variants: [
       { thickness: "11 mil", lining: "Unlined" },
       { thickness: "13 mil", lining: "Flock lined" },
