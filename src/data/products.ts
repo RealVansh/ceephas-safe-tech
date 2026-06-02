@@ -65,8 +65,8 @@ export const products: Product[] = [
     markings: "AJKLMNT - OP",
     application: "Chemical handling, laboratory, industrial, virus protection, bio waste handling, housekeeping, paint workshops, food processing, aircraft maintenance",
     images: [
-      "/assets/products/chem-glove-1.jpg",
-      "/assets/products/chem-glove-2.jpg"
+      "/assets/products/chem-glove-1.png",
+      "/assets/products/chem-glove-2.png"
     ],
     variants: [
       { thickness: "11 mil", lining: "Unlined" },
@@ -107,8 +107,8 @@ export const products: Product[] = [
     markings: "AJKLMNT - OP",
     application: "Chemical handling, laboratory, industrial cleaning, petroleum handling, food processing",
     images: [
-      "/assets/products/chem-glove-1.jpg",
-      "/assets/products/chem-glove-2.jpg"
+      "/assets/products/chem-glove-1.png",
+      "/assets/products/chem-glove-2.png"
     ],
     variants: [
       { thickness: "11 mil", lining: "Unlined" },
