@@ -151,8 +151,8 @@ export const products: Product[] = [
     markings: "AJRLMNT - OP",
     application: "Chemical, petroleum, cleaning industries, heavy-duty industrial chemical handling",
     images: [
-      "/assets/products/cnf-22/main.jpg",
-      "/assets/products/cnf-22/IMG_0239.jpg"
+      "/assets/products/cnf-22/main.png",
+      "/assets/products/cnf-22/IMG_0239.png"
     ],
     variants: [
       { thickness: "15 mil", lining: "Unlined" },
