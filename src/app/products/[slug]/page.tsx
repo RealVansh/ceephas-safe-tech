@@ -255,9 +255,19 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
             {product.markings && (
               <div className="mb-10">
                 <h3 className="font-display text-2xl text-text-primary mb-4">Technical Markings</h3>
-                <div className="bg-slate-50 border border-slate-200 p-4 rounded text-sm font-mono text-text-primary shadow-sm">
-                  {product.certifications.find(c => c.includes("EN")) || "EN Standard"} · {product.markings}
-                </div>
+                {["chem-13", "chem-15", "chem-18"].includes(product.slug) ? (
+                  <div className="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-white">
+                    <img 
+                      src="/assets/standards-banner.png" 
+                      alt="Detailed Standards and Certifications" 
+                      className="w-full h-auto object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="bg-slate-50 border border-slate-200 p-4 rounded text-sm font-mono text-text-primary shadow-sm">
+                    {product.certifications.find(c => c.includes("EN")) || "EN Standard"} · {product.markings}
+                  </div>
+                )}
               </div>
             )}
 
