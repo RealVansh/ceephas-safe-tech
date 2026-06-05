@@ -55,7 +55,7 @@ export default function CertificationMarks({
       }`}
     >
       {visibleCertifications.map((cert) => {
-        const className = `group rounded-lg border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/35 hover:shadow-[0_14px_30px_rgba(47,49,146,0.07)] ${
+        const className = `group rounded-lg border-2 border-accent/40 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_14px_30px_rgba(47,49,146,0.07)] ${
           compact ? "min-h-32 p-4 text-center flex flex-col justify-between block cursor-pointer" : "p-6"
         }`;
 

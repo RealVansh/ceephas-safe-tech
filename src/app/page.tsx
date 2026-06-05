@@ -253,7 +253,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200">
             <AnimatedStat value={8400000} suffix="+" label="Pairs / Year Capacity" />
             <AnimatedStat value={16} suffix="" label="Product Variants" />
-            <AnimatedStat value={6} suffix="" label="Recognized Credentials" />
+            <AnimatedStat value={6} suffix="" label="Globally Relevant Credentials" />
           </div>
         </div>
       </section>
@@ -374,7 +374,7 @@ export default function Home() {
               { icon: Factory, title: "State-of-the-Art Manufacturing", desc: "Fully automated dipping lines with international standard machines at our Virudhunagar, Tamil Nadu facility." },
               { icon: Globe, title: "Globally Certified", desc: "CE, UKCA, ISO 9001:2015, SEDEX and SMETA certified. Our products meet EN ISO 374-1, EN 388 and EN 407 standards." },
               { icon: ShieldAlert, title: "Chemical Resistance Specialists", desc: "EN ISO 374-1:2016 Type A certified — tested against 18 hazardous chemical classes including acids, solvents and hydrocarbons." },
-              { icon: Settings, title: "Custom Solutions at Scale", desc: "Products can be tailored to your specifications. 84,00,000 pairs per year production capacity." }
+              { icon: Settings, title: "Custom Solutions at Scale", desc: "Products can be tailored to your specifications. 84,00,000 pairs per year production capacity, fully scalable." }
             ].map((item, i) => (
               <div key={i} className="flex gap-5 bg-white border border-slate-200 rounded-xl p-6 hover:border-accent/30 hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(47,49,146,0.045)] shadow-[0_4px_20px_rgba(47,49,146,0.015)] transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-lg bg-accent/5 border border-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/10 group-hover:scale-105 transition-all duration-300">

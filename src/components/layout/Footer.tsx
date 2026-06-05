@@ -24,6 +24,19 @@ export default function Footer() {
                 SEDEX / SMETA Member
               </span>
             </div>
+            <a
+              href="https://www.cephasmedical.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-slate-500 hover:text-accent font-medium transition-colors"
+            >
+              <span className="text-xs font-bold text-accent uppercase tracking-wider">Group Company</span>
+              <span className="text-slate-400">—</span>
+              <span className="hover:underline">www.cephasmedical.net</span>
+              <svg className="w-3.5 h-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
 
           {/* Col 2 */}

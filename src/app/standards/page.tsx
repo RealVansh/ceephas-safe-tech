@@ -49,6 +49,24 @@ function CertificateVisual({
             </div>
           </div>
         </>
+      ) : certification.id === "sedex-smeta" ? (
+        <div className="flex h-full flex-col items-center justify-center p-6 text-center bg-white">
+          <div className="relative mb-4 h-24 w-24">
+            <Image
+              src={certification.markImage}
+              alt="SEDEX Member"
+              fill
+              className="object-contain"
+              unoptimized
+            />
+          </div>
+          <div className="text-sm font-bold uppercase tracking-widest text-text-primary mb-1">
+            SEDEX Member
+          </div>
+          <p className="max-w-56 text-xs leading-relaxed text-text-tertiary">
+            SEDEX does not issue certificates. Logo used as permitted by membership.
+          </p>
+        </div>
       ) : (
         <div className="flex h-full flex-col items-center justify-center p-6 text-center">
           <div className="relative mb-5 h-28 w-20 rounded-md border border-slate-200 bg-white shadow-[0_12px_30px_rgba(15,23,42,0.08)]">

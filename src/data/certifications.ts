@@ -49,7 +49,7 @@ export const certifications: Certification[] = [
     markImage: "/assets/certifications/smeta-sedex.png",
     category: "facility",
     summary: "Ethical Trade & Audit",
-    detail: "Responsible supply-chain visibility (SEDEX) and responsible sourcing audit framework (SMETA).",
+    detail: "SEDEX membership with completed SMETA audit for responsible supply-chain practices. SEDEX does not issue certificates — the SEDEX logo is used as permitted.",
     icon: "ethical",
   },
   {
