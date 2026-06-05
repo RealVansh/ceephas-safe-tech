@@ -129,7 +129,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="font-body text-lg text-slate-600 max-w-lg mb-10 leading-relaxed">
-                Chemical Resistant Nitrile Gloves and Personal Protective Equipment, built to international standards. CE &amp; UKCA certified. 
+                Manufacturer of Nitrile Chemical Resistant Industrial Gloves and Personal Protective Equipment, built to international standards. CE &amp; UKCA certified. 
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">

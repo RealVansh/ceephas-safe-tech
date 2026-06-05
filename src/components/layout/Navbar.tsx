@@ -44,7 +44,7 @@ export default function Navbar() {
       >
         <div className="container flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <Image src="/logo.png" alt="Cephas Logo" width={240} height={60} className="w-auto h-10 lg:h-20 object-contain" />
+            <Image src="/logo.png" alt="Cephas Logo" width={240} height={60} className="w-auto h-14 lg:h-20 object-contain" />
           </Link>
 
           {/* Desktop Nav */}
