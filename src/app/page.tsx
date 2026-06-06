@@ -101,8 +101,8 @@ export default function Home() {
         
         {/* Split-Screen Background: Left White, Right Factory */}
         <div className="absolute inset-0 z-0 flex flex-col lg:flex-row">
-          {/* Left Side: Solid White */}
-          <div className="w-full lg:w-1/2 h-full bg-white relative z-10" />
+          {/* Left Side: Solid White (Transparent on mobile to let background through) */}
+          <div className="w-full lg:w-1/2 h-full bg-transparent lg:bg-white relative z-10" />
           
           {/* Right Side: Factory Image */}
           <div className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-1/2 h-full z-0 lg:z-10 overflow-hidden">
@@ -312,7 +312,7 @@ export default function Home() {
           />
 
           {/* Filter Tabs */}
-          <div className="flex overflow-x-auto pb-4 mb-12 gap-2 justify-start md:justify-center no-scrollbar bg-slate-100/60 p-1.5 rounded-full border border-slate-200/60 max-w-fit mx-auto shadow-sm">
+          <div className="flex overflow-x-auto mb-12 gap-2 justify-start md:justify-center items-center no-scrollbar bg-slate-100/60 p-1.5 rounded-full border border-slate-200/60 max-w-fit mx-auto shadow-sm">
             {filterTabs.map((tab) => {
               const isActive = activeTab === tab;
               return (
