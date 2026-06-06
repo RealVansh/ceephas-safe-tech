@@ -112,8 +112,8 @@ export default function Home() {
             />
             
             {/* Mobile faded overlay (so text is readable on mobile where layout stacks) */}
-            <div className="lg:hidden absolute inset-0 bg-white/85 backdrop-blur-[2px]" />
-            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white" />
+            <div className="lg:hidden absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
+            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/70 via-white/20 to-white" />
           </div>
         </div>
         
