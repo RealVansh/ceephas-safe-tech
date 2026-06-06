@@ -98,41 +98,53 @@ export default function Home() {
     <>
       {/* ─── SECTION A: HERO ─── */}
       <section className="relative min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-7rem)] flex items-center overflow-hidden bg-white py-12 lg:py-0">
-        {/* Subtle grid pattern in CSS variables */}
-        <div className="hex-pattern opacity-[0.06]" />
         
-        {/* Ambient glow */}
+        {/* Split-Screen Background: Left White, Right Factory */}
+        <div className="absolute inset-0 z-0 flex flex-col lg:flex-row">
+          {/* Left Side: Solid White */}
+          <div className="w-full lg:w-1/2 h-full bg-white relative z-10" />
+          
+          {/* Right Side: Factory Image */}
+          <div className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-1/2 h-full z-0 lg:z-10 overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 lg:transition-transform lg:duration-1000 lg:hover:scale-105" 
+              style={{ backgroundImage: "url('/assets/about-images/int.jpg')" }}
+            />
+            
+            {/* Mobile faded overlay (so text is readable on mobile where layout stacks) */}
+            <div className="lg:hidden absolute inset-0 bg-white/85 backdrop-blur-[2px]" />
+            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white" />
+          </div>
+        </div>
+        
+        {/* Ambient glow over the left text area */}
         <div
-          className="absolute -top-[20%] -right-[10%] w-[800px] h-[800px] rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse, rgba(47,49,146,0.06), transparent 70%)" }}
-        />
-        <div
-          className="absolute -bottom-[20%] -left-[10%] w-[600px] h-[600px] rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse, rgba(237,28,37,0.04), transparent 70%)" }}
+          className="absolute -top-[10%] -left-[10%] w-[600px] h-[600px] rounded-full pointer-events-none z-0"
+          style={{ background: "radial-gradient(ellipse, rgba(47,49,146,0.04), transparent 70%)" }}
         />
 
-        <div className="container relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+        <div className="container relative z-10 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column */}
-          <div className="lg:col-span-7 pt-4 lg:pt-0">
+          <div className="lg:col-span-6 pt-4 lg:pt-0">
             <motion.div 
               initial="hidden" 
               animate="visible" 
               variants={staggerContainer}
             >
 
-              <motion.h1 variants={fadeUp} className="font-display text-7xl lg:text-[7rem] leading-[0.85] text-text-primary mb-8 tracking-wide">
-                PROTECTION<br />
-                ENGINEERED.<br />
-                <span className="text-accent">TRUSTED</span><br />
-                GLOBALLY<span className="text-accent"></span>
+              <motion.h1 variants={fadeUp} className="font-display text-5xl md:text-6xl lg:text-[5.5rem] leading-[0.95] text-text-primary mb-6 tracking-wide drop-shadow-sm relative z-10">
+                MANUFACTURER<br />
+                OF <span className="text-accent">CHEMICAL</span><br />
+                <span className="text-accent">RESISTANT</span><br />
+                <span className="text-cta">NITRILE GLOVES</span>
               </motion.h1>
 
-              <motion.p variants={fadeUp} className="font-body text-lg text-slate-600 max-w-lg mb-10 leading-relaxed">
-                Manufacturer of Nitrile Chemical Resistant Industrial Gloves and Personal Protective Equipment, built to international standards. CE &amp; UKCA certified. 
+              <motion.p variants={fadeUp} className="font-body text-lg text-text-primary max-w-lg mb-10 leading-relaxed font-semibold drop-shadow-sm relative z-10">
+                Protection Engineered. Trusted Globally. Built to international standards. CE &amp; UKCA certified.
               </motion.p>
 
-              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
+              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 relative z-10">
                 <Link href="/products" className="flex items-center justify-center gap-2 px-8 py-4 bg-cta text-white font-bold tracking-widest uppercase rounded shadow-[0_4px_15px_rgba(237,28,37,0.2)] hover:bg-cta-light hover:shadow-[0_8px_25px_rgba(237,28,37,0.4)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out text-sm cursor-pointer">
                   Explore Products <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -141,7 +153,7 @@ export default function Home() {
           </div>
 
           {/* Right Column — Dynamic Hero Visual */}
-          <div className="lg:col-span-5 relative flex flex-col items-center justify-center min-h-[300px] lg:min-h-[480px] mt-8 lg:mt-0">
+          <div className="lg:col-span-6 relative flex flex-col items-center justify-center min-h-[300px] lg:min-h-[480px] mt-8 lg:mt-0">
             {/* Rotating hexagon background */}
             <motion.div
               animate={{ rotate: 360 }}
