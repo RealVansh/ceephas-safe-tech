@@ -107,13 +107,13 @@ export default function Home() {
           {/* Right Side: Factory Image */}
           <div className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-1/2 h-full z-0 lg:z-10 overflow-hidden">
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 lg:transition-transform lg:duration-1000 lg:hover:scale-105" 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 lg:opacity-60 lg:transition-transform lg:duration-1000 lg:hover:scale-105" 
               style={{ backgroundImage: "url('/assets/about-images/int.jpg')" }}
             />
             
-            {/* Mobile faded overlay (so text is readable on mobile where layout stacks) */}
-            <div className="lg:hidden absolute inset-0 bg-white/40 backdrop-blur-[2px]" />
-            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-white/70 via-white/20 to-white" />
+            {/* Mobile overlay: just enough white to make text readable, but no heavy gradients */}
+            <div className="lg:hidden absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
+            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
           </div>
         </div>
         
