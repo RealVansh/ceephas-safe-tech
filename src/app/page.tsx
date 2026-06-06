@@ -107,7 +107,7 @@ export default function Home() {
           {/* Right Side: Factory Image */}
           <div className="absolute inset-0 lg:relative lg:inset-auto w-full lg:w-1/2 h-full z-0 lg:z-10 overflow-hidden">
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 lg:opacity-60 lg:transition-transform lg:duration-1000 lg:hover:scale-105" 
+              className="absolute inset-0 bg-contain bg-top lg:bg-cover lg:bg-center bg-no-repeat opacity-100 lg:opacity-60 lg:transition-transform lg:duration-1000 lg:hover:scale-105" 
               style={{ backgroundImage: "url('/assets/about-images/int.jpg')" }}
             />
             
