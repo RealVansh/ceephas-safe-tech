@@ -19,10 +19,10 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.cephasmedical.net"),
+  metadataBase: new URL("https://www.cephassafetech.com"),
   title: {
-    default: "Cephas | Chemical Resistant Nitrile Gloves Manufacturer India",
-    template: "%s | Cephas",
+    default: "Cephas Safe Tech | Chemical Resistant Nitrile Gloves Manufacturer India",
+    template: "%s | Cephas Safe Tech",
   },
   description:
     "Manufacturer of Chemical Resistant Nitrile Flock-lined Gloves and PPE. CE & UKCA Certified. EN ISO 374-1 Type A. 84,00,000 pairs/year. Virudhunagar, Tamil Nadu, India.",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.cephasmedical.net",
-    siteName: "Cephas Medical",
+    url: "https://www.cephassafetech.com",
+    siteName: "Cephas Safe Tech",
   },
   robots: {
     index: true,

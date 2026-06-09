@@ -7,7 +7,7 @@ const productSlugs = [
 ];
 
 module.exports = {
-  siteUrl: 'https://www.cephasmedical.net',
+  siteUrl: 'https://www.cephassafetech.com',
   generateRobotsTxt: true,
   outDir: 'public',
   exclude: ['/icon.png', '/opengraph-image.png', '/twitter-image.png'],
