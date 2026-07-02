@@ -53,6 +53,8 @@ export const products: Product[] = [
     material: "Premium Acrylonitrile Butadiene Rubber",
     sizes: ["S/7", "M/8", "L/9", "XL/10", "XXL/11"],
     features: [
+      "Upgraded EN 388 Cut Resistance (Level 1)",
+      "Certified for Ammonium Hydroxide (O) and Hydrogen Peroxide (P)",
       "Fully automated dipping line manufacturing",
       "Resistant to a wide variety of chemicals and solvents",
       "Superior puncture and abrasion protection over rubber or neoprene",

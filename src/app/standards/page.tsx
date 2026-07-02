@@ -309,7 +309,20 @@ export default function Standards() {
               <table className="w-full text-left text-sm whitespace-nowrap border border-slate-200">
                 <thead><tr className={thCls}><th className="py-3 px-4 rounded-tl border-l-2 border-l-accent">Code</th><th className="py-3 px-4">Chemical Name</th><th className="py-3 px-4">CAS Number</th><th className="py-3 px-4 rounded-tr">Chemical Class</th></tr></thead>
                 <tbody className="divide-y divide-slate-200">
-                  {chemRows.map((r,i)=>(<tr key={i} className={i%2===0?"bg-white":"bg-slate-50"}><td className="py-3 px-4 font-mono font-bold text-accent">{r[0]}</td><td className="py-3 px-4 text-text-secondary">{r[1]}</td><td className="py-3 px-4 text-text-tertiary">{r[2]}</td><td className="py-3 px-4 text-text-tertiary">{r[3]}</td></tr>))}
+                  {chemRows.map((r,i)=>{
+                    const isNew = r[0] === "O" || r[0] === "P";
+                    return (
+                      <tr key={i} className={`${i%2===0?"bg-white":"bg-slate-50"} ${isNew ? "relative z-10 shadow-[0_0_15px_rgba(47,49,146,0.1)] border-y border-accent/20 bg-accent/5" : ""}`}>
+                        <td className="py-3 px-4 font-mono font-bold text-accent flex items-center gap-2">
+                          {r[0]}
+                          {isNew && <span className="px-1.5 py-0.5 bg-accent text-white text-[9px] font-bold uppercase tracking-widest rounded-sm">NEW</span>}
+                        </td>
+                        <td className={`py-3 px-4 ${isNew ? "text-accent font-bold" : "text-text-secondary"}`}>{r[1]}</td>
+                        <td className="py-3 px-4 text-text-tertiary">{r[2]}</td>
+                        <td className="py-3 px-4 text-text-tertiary">{r[3]}</td>
+                      </tr>
+                    )
+                  })}
                 </tbody>
               </table>
             </div>
@@ -321,6 +334,19 @@ export default function Standards() {
         <div className="container">
           <div className="bg-white border-l-4 border-l-accent border border-slate-200 p-8 lg:p-12 rounded shadow-sm mb-16">
             <h2 className="font-display text-4xl text-text-primary mb-2">EN 388:2016</h2>
+            
+            <div className="mb-8 p-4 bg-accent/10 border border-accent/20 rounded-lg flex items-start gap-4">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-white">
+                <ShieldCheck className="h-4 w-4" />
+              </div>
+              <div>
+                <h4 className="text-sm font-bold text-accent mb-1 uppercase tracking-widest">OFFICIAL UPGRADE NOTICE</h4>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  The Cephas 13-Inch Chemical Resistant Gloves (Model: CNF 15) have successfully passed enhanced mechanical risk testing and are now officially certified for <strong className="text-accent">EN 388 Cut Resistance Level 1</strong>. Please refer to the updated CE certificate (0598/PPE/23/4194 Issue 2).
+                </p>
+              </div>
+            </div>
+
             <h3 className="font-bold text-accent uppercase tracking-widest text-sm mb-6">MECHANICAL RISKS</h3>
             <p className="text-text-secondary mb-10 max-w-3xl leading-relaxed">Abrasion resistance, cut resistance, tearing strength, puncture resistance and impact protection are tested.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-12 font-mono text-sm text-text-secondary">

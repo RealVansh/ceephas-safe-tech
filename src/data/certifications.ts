@@ -72,12 +72,12 @@ export const certifications: Certification[] = [
     markImage: "/assets/certifications/ce-mark.png",
     category: "product",
     summary: "PPE Regulation EU 2016/425",
-    detail: "Product conformity route for protective gloves supplied into the European market.",
+    detail: "Product conformity route for protective gloves supplied into the European market. The 13-inch CNF15 model was recently upgraded to include EN 388 Cut Resistance Level 1 and protection against Ammonium Hydroxide (O) & Hydrogen Peroxide (P).",
     icon: "compliance",
     certificateScans: [
       {
         label: "13 Inch Gloves",
-        images: ["/assets/ce-cert-1.jpg", "/assets/ce-cert-2.jpg"]
+        images: ["/assets/ce-cert-1.png", "/assets/ce-cert-2.png"]
       },
       {
         label: "18 Inch Gloves",
