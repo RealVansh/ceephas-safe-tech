@@ -1,10 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-<<<<<<< HEAD
 import { ShieldCheck, Mail, Phone } from "lucide-react";
-=======
-import { ShieldCheck } from "lucide-react";
->>>>>>> origin/main
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -113,7 +109,6 @@ export default function Footer() {
           <p className="text-xs text-slate-400">
             © {currentYear} Cephas Medical Private Limited. All Rights Reserved.
           </p>
-<<<<<<< HEAD
           <div className="flex items-center gap-3 text-xs text-slate-400 font-medium">
             <span>Designed & Developed by Vansh V</span>
             <div className="w-1 h-1 rounded-full bg-slate-300" />
@@ -124,8 +119,6 @@ export default function Footer() {
               <Phone className="w-3.5 h-3.5" />
             </a>
           </div>
-=======
->>>>>>> origin/main
         </div>
       </div>
     </footer>
