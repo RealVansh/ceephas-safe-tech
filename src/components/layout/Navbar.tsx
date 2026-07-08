@@ -12,10 +12,7 @@ const LINKS = [
   { label: "Products", href: "/products" },
   { label: "About", href: "/about" },
   { label: "Standards", href: "/standards" },
-<<<<<<< HEAD
   { label: "Awards", href: "/awards" },
-=======
->>>>>>> origin/main
   { label: "Contact", href: "/contact" },
 ];
 
