@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.cephasmedical.net
+
+# Sitemaps
+Sitemap: https://www.cephasmedical.net/sitemap.xml
