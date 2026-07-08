@@ -20,7 +20,10 @@ module.exports = {
       })),
       { loc: '/products/chemical-resistant-gloves', priority: 0.9, lastmod: new Date().toISOString() },
       { loc: '/standards', priority: 0.7, lastmod: new Date().toISOString() },
+<<<<<<< HEAD
       { loc: '/awards', priority: 0.6, lastmod: new Date().toISOString() },
+=======
+>>>>>>> origin/main
       { loc: '/about', priority: 0.6, lastmod: new Date().toISOString() },
       { loc: '/contact', priority: 0.6, lastmod: new Date().toISOString() },
     ];
