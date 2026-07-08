@@ -68,6 +68,7 @@ export default function Lightbox({
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen, currentIndex, images]);
 
   if (!isOpen || images.length === 0) return null;

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { Trophy, Award, Star, Medal, Newspaper, Heart, ArrowRight, Download, ExternalLink, Play } from "lucide-react";
+import { motion, Variants } from "framer-motion";
+import { Trophy, Award, Star, Medal, Newspaper, Heart, ArrowRight, Download, ExternalLink } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import Lightbox from "@/components/ui/Lightbox";
 
@@ -101,7 +101,7 @@ const awards = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -110,7 +110,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
