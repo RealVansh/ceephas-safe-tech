@@ -120,17 +120,13 @@ export default function Lightbox({
         )}
 
         {/* The Image Container */}
-        <div 
-          className="relative w-full h-full max-h-[80vh] max-w-[85vw] flex items-center justify-center transition-all duration-300 scale-95"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <Image
+        <div className="relative flex items-center justify-center transition-all duration-300">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={images[currentIndex]}
             alt={`${productName} fullscreen view ${currentIndex + 1}`}
-            fill
-            priority
-            className="object-contain transition-all duration-300 select-none pointer-events-none"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 85vw"
+            className="max-h-[80vh] max-w-[88vw] w-auto h-auto object-contain rounded-lg shadow-2xl transition-all duration-300 select-none cursor-default"
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
 
@@ -178,11 +174,8 @@ export default function Lightbox({
       )}
 
       {/* Footer hint */}
-      <div 
-        className="text-center text-xs text-slate-500 font-medium tracking-wider mb-2 select-none"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {images.length > 1 ? "Use Arrow Keys or Swipe to Navigate • Click ESC to close" : "Click ESC to close"}
+      <div className="text-center text-xs text-slate-500 font-medium tracking-wider mb-2 select-none">
+        {images.length > 1 ? "Swipe or use arrows to navigate • Tap outside to close" : "Tap anywhere outside to close"}
       </div>
     </div>
   );

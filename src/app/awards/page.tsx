@@ -279,6 +279,118 @@ export default function Awards() {
         </div>
       </section>
 
+      {/* ─── Industry Presence / Exhibition ─── */}
+      <section className="py-16">
+        <div className="container">
+          <div className="mb-12 max-w-3xl">
+            <div className="mb-4 flex items-center gap-4">
+              <div className="h-[2px] w-8 bg-accent" />
+              <span className="text-xs font-semibold uppercase tracking-widest text-accent">
+                Industry Presence
+              </span>
+            </div>
+            <h2 className="font-display text-4xl text-text-primary md:text-5xl mb-4">
+              EXHIBITIONS & TRADE SHOWS
+            </h2>
+            <p className="text-text-secondary leading-relaxed">
+              Cephas Safe Tech actively participates in leading industry expos to showcase innovation in PPE manufacturing and connect with global partners.
+            </p>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="relative overflow-hidden rounded-2xl border border-slate-700/50 bg-gradient-to-br from-slate-900 via-slate-900 to-accent/5 p-8 md:p-12"
+          >
+            {/* Exhibition Header */}
+            <div className="flex flex-col md:flex-row md:items-center gap-6 mb-10">
+              <div className="flex items-center gap-4">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-accent/15 text-accent">
+                  <ExternalLink className="h-7 w-7" />
+                </div>
+                <div>
+                  <h3 className="font-display text-2xl md:text-3xl text-text-primary">
+                    OSH INDIA 2026
+                  </h3>
+                  <p className="text-xs text-text-tertiary uppercase tracking-wider font-semibold mt-1">
+                    October 7–9, 2026 • Bombay Exhibition Centre, Mumbai
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://www.oshindia.com/mumbai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-accent text-accent text-xs font-bold uppercase tracking-widest hover:-translate-y-0.5 hover:bg-accent/10 transition-all duration-300 w-fit"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Visit OSH India
+              </a>
+            </div>
+
+            {/* Description */}
+            <div className="mb-10">
+              <p className="text-text-secondary leading-relaxed max-w-4xl">
+                Cephas Safe Tech showcased its comprehensive portfolio of <strong className="text-text-primary">chemical-resistant, cut-resistant, and industrial hand protection gloves</strong> at{" "}
+                <strong className="text-text-primary">OSH India 2026</strong> — South Asia&apos;s largest Occupational Safety &amp; Health Expo. 
+                The exhibition saw strong engagement from end-users and OEMs, including both existing and prospective customers, 
+                making it a highly successful show that reinforced Cephas&apos;s position as a trusted PPE manufacturer.
+              </p>
+            </div>
+
+            {/* Photo Gallery — 5 images */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+              {[
+                { src: "/assets/awards/osh-india-1.jpeg", alt: "OSH India 2026 - Cephas Safe Tech Stall" },
+                { src: "/assets/awards/osh-india-2.jpeg", alt: "OSH India 2026 - Product Showcase" },
+                { src: "/assets/awards/osh-india-3.jpeg", alt: "OSH India 2026 - Client Engagement" },
+                { src: "/assets/awards/osh-india-4.jpeg", alt: "OSH India 2026 - Team at Exhibition" },
+                { src: "/assets/awards/osh-india-5.jpeg", alt: "OSH India 2026 - Exhibition Highlights" },
+              ].map((photo, i) => (
+                <motion.button
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.08 }}
+                  onClick={() => {
+                    setLightboxImages([photo.src]);
+                    setLightboxTitle("OSH India 2026");
+                    setLightboxOpen(true);
+                  }}
+                  className="group relative aspect-[4/3] rounded-xl overflow-hidden border border-slate-700/30 bg-slate-800 cursor-pointer"
+                >
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, 20vw"
+                  />
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-3">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-white/90">
+                      Tap to View
+                    </span>
+                  </div>
+                </motion.button>
+              ))}
+            </div>
+
+            {/* Badge */}
+            <div className="mt-8 flex items-center gap-3">
+              <div className="h-[1px] flex-1 bg-slate-700/50" />
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-text-tertiary whitespace-nowrap">
+                South Asia&apos;s Largest Occupational Safety &amp; Health Event
+              </span>
+              <div className="h-[1px] flex-1 bg-slate-700/50" />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Media Feature */}
       <section className="py-16">
         <div className="container">
