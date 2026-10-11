@@ -380,12 +380,12 @@ export default function Awards() {
             </div>
 
             {/* Badge */}
-            <div className="mt-8 flex items-center gap-3">
-              <div className="h-[1px] flex-1 bg-slate-700/50" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-text-tertiary whitespace-nowrap">
+            <div className="mt-8 flex items-center justify-center gap-3">
+              <div className="hidden sm:block h-[1px] flex-1 bg-slate-700/50" />
+              <span className="text-[10px] font-bold uppercase tracking-wider sm:tracking-[0.2em] text-text-tertiary text-center leading-relaxed">
                 South Asia&apos;s Largest Occupational Safety &amp; Health Event
               </span>
-              <div className="h-[1px] flex-1 bg-slate-700/50" />
+              <div className="hidden sm:block h-[1px] flex-1 bg-slate-700/50" />
             </div>
           </motion.div>
         </div>
